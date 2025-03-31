@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
+import UserManagementPage from './pages/UserManagementPage';
 
 const App: React.FC = () => {
   const { isAuthenticated } = useAuth();
@@ -17,6 +18,10 @@ const App: React.FC = () => {
       <Route 
         path="/dashboard" 
         element={isAuthenticated ? <DashboardPage /> : <Navigate to="/login" />} 
+      />
+      <Route 
+        path="/users" 
+        element={isAuthenticated ? <UserManagementPage /> : <Navigate to="/login" />} 
       />
       <Route 
         path="*" 

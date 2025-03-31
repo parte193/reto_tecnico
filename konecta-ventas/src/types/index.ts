@@ -1,13 +1,21 @@
 // Tipos para autenticación
 export interface User {
-    id: number;
+    id?: number;
     nombre: string;
     correo_electronico: string;
     rol: number;
+    fecha_creacion?: string;
     totalVentas?: number;
     creditosAprobados?: number;
     tarjetasCredito?: number;
-  }
+}
+
+export interface UserFormData {
+  nombre: string;
+  correo_electronico: string;
+  contrasena?: string;
+  id_rol: string;
+}
   
   export interface LoginCredentials {
     correo_electronico: string;

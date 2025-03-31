@@ -20,6 +20,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import PeopleIcon from '@mui/icons-material/People';
 import SellIcon from '@mui/icons-material/Sell';
 import { useAuth } from '../../context/AuthContext';
+import { Link } from 'react-router-dom';
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -59,6 +60,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children, title }) => {
               <SellIcon />
             </ListItemIcon>
             <ListItemText primary="Ventas" />
+            <Link to={'/ventas'}/>
           </ListItemButton>
         </ListItem>
         {user && user.rol === 1 && (

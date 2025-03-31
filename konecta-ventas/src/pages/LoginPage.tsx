@@ -14,6 +14,9 @@ const LoginPage: React.FC = () => {
           alignItems: 'center',
         }}
       >
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <img src="./image_dollar.png" alt="dollar" width={100} height={100} />
+        </Box>
         <Typography component="h1" variant="h4" sx={{ mb: 4 }}>
           Sistema de Ventas
         </Typography>
