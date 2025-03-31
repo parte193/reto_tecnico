@@ -1,4 +1,6 @@
 📌 Sistema de Ventas
+
+
 📋 Descripción
 El Sistema de Ventas es una aplicación web diseñada para gestionar ventas y usuarios de manera eficiente. Incluye un sistema de autenticación, gestión de productos y generación de reportes en dashboard principal.
 
