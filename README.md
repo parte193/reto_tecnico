@@ -5,13 +5,11 @@
 El Sistema de Ventas es una aplicación web diseñada para gestionar ventas y usuarios de manera eficiente. Incluye un sistema de autenticación, gestión de productos y generación de reportes en dashboard principal.
 
 🚀 Tecnologías utilizadas
-Frontend: React, Material-UI
+Frontend: React, Material-UI. typescript
 
 Backend: Node.js, Express
 
 Base de datos: MySQL
-
-Gestión de estado: Zustand / Redux
 
 🖥 Pantallas principales
 1️⃣ Pantalla de Inicio de Sesión
@@ -56,17 +54,20 @@ Copiar
 Editar
 git clone [https://github.com/tu-usuario/sistema-de-ventas.git](https://github.com/parte193/reto_tecnico.git)
 cd reto_tecnico
+
 2️⃣ Instalar dependencias
 sh
 Copiar
 Editar
 pnpm install
+
 3️⃣ Ejecutar la aplicación
 sh
 Copiar
 Editar
 pnpm dev
 La aplicación estará disponible en http://localhost:5173/.
+
 
 🔐 Autenticación y Seguridad
 Se utiliza JWT para la autenticación de usuarios.
