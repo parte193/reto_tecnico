@@ -47,7 +47,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children, title }) => {
       <Divider />
       <List>
         <ListItem disablePadding>
-          <ListItemButton>
+          <ListItemButton component={Link} to="/Dashboard">
             <ListItemIcon>
               <DashboardIcon />
             </ListItemIcon>
@@ -55,16 +55,15 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children, title }) => {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton>
+          <ListItemButton component={Link} to="/sales">
             <ListItemIcon>
               <SellIcon />
             </ListItemIcon>
             <ListItemText primary="Ventas" />
-            <Link to={'/ventas'}/>
           </ListItemButton>
         </ListItem>
           <ListItem disablePadding>
-            <ListItemButton>
+            <ListItemButton component={Link} to="/users">
               <ListItemIcon>
                 <PeopleIcon />
               </ListItemIcon>
