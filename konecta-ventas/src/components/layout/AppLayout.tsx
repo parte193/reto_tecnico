@@ -30,7 +30,7 @@ interface AppLayoutProps {
 const drawerWidth = 240;
 
 const AppLayout: React.FC<AppLayoutProps> = ({ children, title }) => {
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -63,7 +63,6 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children, title }) => {
             <Link to={'/ventas'}/>
           </ListItemButton>
         </ListItem>
-        {user && user.rol === 1 && (
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -72,7 +71,6 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children, title }) => {
               <ListItemText primary="Usuarios" />
             </ListItemButton>
           </ListItem>
-        )}
       </List>
       <Divider />
       <List>
