@@ -52,8 +52,8 @@ Botón Iniciar Sesión
 sh
 Copiar
 Editar
-git clone https://github.com/tu-usuario/sistema-de-ventas.git
-cd sistema-de-ventas
+git clone [https://github.com/tu-usuario/sistema-de-ventas.git](https://github.com/parte193/reto_tecnico.git)
+cd reto_tecnico
 2️⃣ Instalar dependencias
 sh
 Copiar
