@@ -35,8 +35,8 @@ Botón Iniciar Sesión
 ![image](https://github.com/user-attachments/assets/1e2a8784-daf2-4ed7-b234-9e406542312b)
 
 
-3️⃣ Gestión de Productos
-📍 URL: /productos
+3️⃣ Gestión de Ventas
+📍 URL: /sales
 📌 Permite agregar, editar y eliminar productos del inventario.
 
 ![image](https://github.com/user-attachments/assets/d1582705-b1e6-45bf-9ac7-f9baa8eca5ed)
