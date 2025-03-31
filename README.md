@@ -12,6 +12,7 @@ Backend: Node.js, Express
 Base de datos: MySQL
 
 🖥 Pantallas principales
+
 1️⃣ Pantalla de Inicio de Sesión
 📍 URL: /login
 📌 Permite a los usuarios autenticarse en el sistema ingresando su correo y contraseña.
