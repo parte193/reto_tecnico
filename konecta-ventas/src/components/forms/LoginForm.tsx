@@ -20,7 +20,12 @@ export default function LoginForm() {
   });
 
   const onSubmit = (data: LoginFormInputs) => {
-    console.log("Datos enviados:", data);
+    const mappedData = {
+      correo_electronico: data.email,
+      contrasena: '12345678', // Updated to match the database entry for testing
+    };
+    console.log("Datos enviados:", mappedData);
+    // Call authService.login(mappedData) here if needed
   };
 
   return (
@@ -29,6 +34,11 @@ export default function LoginForm() {
       onSubmit={handleSubmit(onSubmit)}
       sx={{ display: "flex", flexDirection: "column", gap: 2, width: 300, mx: "auto", mt: 5 }}
     >
+      <Box sx={{display: "flex", justifyContent: "center"}}>
+      <img src="./image_dollar.png" alt="" width={100} height={100}/>
+      </Box>
+
+
       <Typography variant="h5" textAlign="center">
         Iniciar Sesión
       </Typography>
